@@ -87,9 +87,9 @@ CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
         # IBM's JDK on AIX uses strange locations for the executables
-        JAVACMD="java17"
+        JAVACMD="$JAVA_HOME/jre/sh/java"
     else
-        JAVACMD="java17"
+        JAVACMD="$JAVA_HOME/bin/java"
     fi
     if [ ! -x "$JAVACMD" ] ; then
         die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
